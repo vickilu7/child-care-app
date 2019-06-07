@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BabysittingSchedule">
+
+    <!-- What’s your schedule for the week? -->
+    <TextView
+        android:id="@+id/what_s_your"
+        android:layout_width="286dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="top"
+        android:text="@string/what_s_your"
+        android:textAppearance="@style/what_s_your"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tap_the_tim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="top"
+        android:text="@string/tap_the_tim"
+        android:textAppearance="@style/tap_the_tim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/ToInboxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@android:color/transparent"
+        android:onClick="onToInbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap_the_tim"
+        app:srcCompat="@drawable/forward" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tap_the_tim"
+        app:layout_constraintTop_toBottomOf="@+id/what_s_your"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.1"
+                android:background="#EF5350"
+                android:drawablePadding="8dp"
+                android:gravity="bottom|center"
+                android:padding="10dp"
+                android:text="S"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.1"
+                android:background="#EF5350"
+                android:drawablePadding="8dp"
+                android:gravity="bottom|center"
+                android:padding="10dp"
+                android:text="M"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.1"
+                android:background="#EF5350"
+                android:drawablePadding="8dp"
+                android:gravity="bottom|center"
+                android:padding="10dp"
+                android:text="T"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.1"
+                android:background="#EF5350"
+                android:drawablePadding="8dp"
+                android:gravity="bottom|center"
+                android:padding="10dp"
+                android:text="W"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.1"
+                android:background="#EF5350"
+                android:drawablePadding="8dp"
+                android:gravity="bottom|center"
+                android:padding="10dp"
+                android:text="R"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.1"
+                android:background="#EF5350"
+                android:drawablePadding="8dp"
+                android:gravity="bottom|center"
+                android:padding="10dp"
+                android:text="F"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.1"
+                android:background="#EF5350"
+                android:drawablePadding="8dp"
+                android:gravity="bottom|center"
+                android:padding="10dp"
+                android:text="S"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:fontFamily="sans-serif-black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:gravity="bottom"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/morning"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/morning"
+                android:gravity="bottom"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/morning"
+                android:gravity="bottom"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/morning"
+                android:gravity="bottom"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/morning"
+                android:gravity="bottom"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/morning"
+                android:gravity="bottom"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/morning"
+                android:gravity="bottom"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/afternoon"
+                android:drawablePadding="10dp"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/afternoon"
+                android:drawablePadding="10dp"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/afternoon"
+                android:drawablePadding="10dp"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/afternoon"
+                android:drawablePadding="10dp"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/afternoon"
+                android:drawablePadding="10dp"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/afternoon"
+                android:drawablePadding="10dp"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/afternoon"
+                android:drawablePadding="10dp"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/evening"
+                android:gravity="bottom"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/evening"
+                android:gravity="bottom"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/evening"
+                android:gravity="bottom"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/evening"
+                android:gravity="bottom"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/evening"
+                android:gravity="bottom"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/evening"
+                android:gravity="bottom"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="0dp"
+                android:layout_weight="0.1"
+                android:drawableTop="@drawable/evening"
+                android:gravity="bottom"
+                android:padding="0dp"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

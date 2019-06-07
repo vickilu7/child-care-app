@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ChildCare</string>
+
+    <string name="what_s_your">What\'s your schedule for the week?</string>
+    <string name="calendar_on">y</string>
+    <string name="calendar_off">n</string>
+    <string name="tap_the_tim">Tap the times that you can babysit.</string>
 </resources>
