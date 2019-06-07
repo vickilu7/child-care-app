@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BabysitSchedule">
+
+    <!-- What’s your schedule for the week? -->
+    <TextView
+        android:id="@+id/what_s_your"
+        android:layout_width="286dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="top"
+        android:text="@string/what_s_your"
+        android:textAppearance="@style/what_s_your"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:padding="0dp"
+        android:layout_width="379dp"
+        android:layout_height="297dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_s_your">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/rectangle"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:background="@drawable/empty_rectangle" />
+
+            <View
+                android:id="@+id/rectangle2"
+                android:layout_height="49dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/empty_rectangle"/>
+            <View
+                android:id="@+id/rectangle3"
+                android:layout_width="33dp"
+                android:layout_height="49dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/empty_rectangle"
+                android:padding="4dp"/>
+            <View
+                android:id="@+id/rectangle4"
+                android:layout_width="33dp"
+                android:layout_height="49dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/empty_rectangle" />
+            <View
+                android:id="@+id/rectangle5"
+                android:layout_width="33dp"
+                android:layout_height="49dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/empty_rectangle" />
+            <View
+                android:id="@+id/rectangle6"
+                android:layout_width="33dp"
+                android:layout_height="49dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/empty_rectangle" />
+            <View
+                android:id="@+id/rectangle7"
+                android:layout_width="33dp"
+                android:layout_height="49dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/empty_rectangle" />
+            <View
+                android:id="@+id/rectangle8"
+                android:layout_width="33dp"
+                android:layout_height="49dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/empty_rectangle" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:padding="4dp">
+
+            <View
+                android:id="@+id/rectangle9"
+                android:layout_width="33dp"
+                android:layout_height="50dp"
+                android:background="@drawable/empty_rectangle" />
+
+            <ToggleButton
+                android:id="@+id/calendar_button_1"
+                android:layout_width="33dp"
+                android:layout_weight="0.1"
+                android:layout_height="50dp"
+                android:textOff=""
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_M1"
+                android:layout_width="33dp"
+                android:layout_weight="0.1"
+                android:layout_height="50dp"
+                android:textOff=""
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_T1"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_W1"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_R1"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_F1"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_S1"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:padding="4dp">
+
+            <View
+                android:id="@+id/rectangle10"
+                android:layout_width="33dp"
+                android:layout_height="50dp"
+                android:background="@drawable/empty_rectangle" />
+
+            <ToggleButton
+                android:id="@+id/calendar_button_2"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_M2"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_T2"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_W2"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_R2"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_F2"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_S2"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:padding="4dp">
+
+            <View
+                android:id="@+id/rectangle11"
+                android:layout_width="33dp"
+                android:layout_height="50dp"
+                android:background="@drawable/empty_rectangle" />
+
+            <ToggleButton
+                android:id="@+id/calendar_button_3"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_M3"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_T3"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_W3"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_R3"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_F3"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/calendar_button_S3"
+                android:layout_weight="0.1"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tap_the_tim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="top"
+        android:text="@string/tap_the_tim"
+        android:textAppearance="@style/tap_the_tim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+
+</android.support.constraint.ConstraintLayout>
